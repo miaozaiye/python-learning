@@ -1,2 +1,12 @@
-L = [x * x for x in range(10)]
-g = (x * x for x in range(10))
+def odd():
+    print('step 1')
+    yield 1
+    print('step 2')
+    yield 3
+    print('step 3')
+    yield 5
+
+o = odd()
+next (o)
+next (o)
+
